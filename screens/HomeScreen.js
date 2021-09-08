@@ -34,13 +34,13 @@ const HomeScreen  = ()=> {
                 fetchDetails={true}
                 enablePoweredByContainer={false}
                 onPress={(data,details = null)=>{
-                    // console.log(data);
-                    // dispatch(setOrigin({
-                    //     location: details.geometry.location,
-                    //     description: data.description
-                    // }))
+                    console.log(data);
+                    dispatch(setOrigin({
+                        location: details.geometry.location,
+                        description: data.description
+                    }))
 
-                    // dispatch(setDestination(null))
+                    dispatch(setDestination(null))
                 }}
                 query={{
                     key:"AIzaSyD8Ao0upDUMMx5WdjyHugrddvXR6OgXk5Q",
